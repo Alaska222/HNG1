@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.boxxx{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    padding: 0px 0;
+}
+
+.left,.right{
+    flex: 1;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+}
+
+.left button{
+    color: white;
+    border: none;
+    padding: 10px;
+    background-color: #0056d2;
+    border-radius: 5px;
+    align-self: start;
+}
+
+
+
+.profile{
+    width: 200px;
+    height: 200px;
+}
+
+header{
+    background-color: #d6edf6;
+    height: 40px;
+    color: black;
+}
+
+header h4{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.right{
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+.image{
+    width: 100%;
+}
+
+
+.Hng-goals{
+    margin-top:120px;
+ 
+    background-color: #f8f4f4;
+    height: auto;
+
+
+}
+
+.goals h2,ul{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.goals ul li{
+    list-style: none;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+footer{
+    background-color: maroon;
+}
+
+.footer-div{
+
+
+}
+
+.hnglink{
+    text-align: center;
+}
+
+.footer-div a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.footer-text{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+/* adding media query to achive responsiveness */
+
+@media (max-width:400px){
+
+    header{
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+    .left,.right{
+        width: 100%;
+    }
+
+    .goals{
+        flex-direction: column;
+    }
+
+    .time-info{
+        margin-top: 80px;
+       flex-direction: column;
+    }
+}
+
